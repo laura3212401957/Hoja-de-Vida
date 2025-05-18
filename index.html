@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hoja de vida - Laura Cardona G</title>
+    <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <div class="resume">
+    <!-- Left Column -->
+    <div class="left">
+      <img src="/img/Foto.jpeg" alt="Profile Image"/>
+      <div class="section-title">SOBRE MI</div>
+      <div class="about-me">
+        Desarrolladora de software altamente motivada y capacitada, apasionada por crear experiencias web atractivas y funcionales. Poseo conocimientos de HTML, CSS, java y SQL, me comprometo a mantenerme al día con las últimas tendencias y tecnologías en desarrollo web. Mi objetivo es aprovechar mi experiencia técnica y creatividad para contribuir a proyectos innovadores y de gran impacto.
+      </div>
+
+      <div class="section-title">ESTUDIOS SECUNDARIOS</div>
+      <div class="skills">
+        <div class="skill-category"><br/>
+          • Programación de software (SENA)<br/>
+          • Curso corto de desarrollo de apps móviles (Universidad Nacional)<br/>
+          • Estudiante de Tecnología en Desarrollo de Software (Uniagustiniana)
+        </div>
+      </div>
+
+      <div class="section-title">LANGUAGES</div>
+      <div class="languages">
+        <div class="language">
+          <span>Español</span>
+          <span>Nativo</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right">
+      <div class="name">LAURA VALENTINA CARDONA GUARIN</div>
+      <div class="position">DESARROLLADORA DE SOFTWARE</div>
+
+      <div class="contact">
+        <div>📍 Carrera 119b, Bogotá</div>
+        <div>📧 lauracardona2014@hotmail.com</div>
+        <div>📞 3204351479</div>
+        <div>🎂 22 julio 2004</div>
+      </div>
+
+      <div class="section">
+        <h3>EDUCACIÓN</h3>
+        <p><b>Primaria</b><br/> Colegio Jorge Tadeo Lozano - Bogotá</p>
+        <p><b>Bachillerato</b><br/> Rembrandt y Colegio General Santander Engativá</p>
+        <p><b>Técnico</b><br/> Programación de Software - SENA</p>
+        <p><b>Curso Corto</b><br/> Desarrollo de Apps Móviles - Universidad Nacional (Atenea)</p>
+        <p><b>Tecnología en curso</b><br/> Desarrollo de Software - Uniagustiniana</p>
+      </div>
+
+      <div class="section">
+        <h3>EXPERIENCIA LABORAL</h3>
+        <div class="project">
+          <b>Julio 2021 – Enero 2023: Cajera - Restaurante</b><br/>
+          Atención al cliente y manejo de caja.<br/>
+          <b>Jefe inmediato:</b> Bernardo Cardona Sánchez<br/>
+          <b>Tel:</b> 3508010292<br/>
+          <b>Dirección:</b> Carrera #72a-01 Bogotá
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  // 1. Mensaje de bienvenida al cargar la página
+  window.onload = function () {
+    alert("¡Bienvenido/a a la hoja de vida de Laura Cardona!");
+  };
+
+  // 2. Resaltar sección SOBRE MI al pasar el mouse
+  const aboutSection = document.querySelector('.about-me'); // Selecciona el div de la sección "SOBRE MI" y lo guarda en la variable aboutSection
+  aboutSection.addEventListener('mouseenter', function() { // Agrega un evento al pasar el mouse por encima de la sección
+    this.style.backgroundColor = '#fcaaaa'; // Cambia el color de fondo a un tono más claro
+  });
+  aboutSection.addEventListener('mouseleave', function() { // Agrega un evento al quitar el mouse de la sección
+    this.style.backgroundColor = '#f98686'; // Cambia el color de fondo a un tono más oscuro
+  });
+
+  // 3. Mostrar mensaje al hacer clic en el nombre
+  const nameTitle = document.querySelector('.name'); // Selecciona el div del nombre y lo guarda en la variable nameTitle
+  nameTitle.addEventListener('click', function() { // Agrega un evento al hacer clic en el nombre
+    alert("Laura Valentina Cardona Guarín\nDesarrolladora de Software."); // Muestra un mensaje con el nombre y la profesión
+  });
+</script>
+
+</body>
+</html>
